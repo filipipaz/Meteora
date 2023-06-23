@@ -1,0 +1,29 @@
+@import '../abstract/variaveis';
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(137 96 180);
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        display: block;
+        .img__carousel {
+            content: url('../assets/Tablet/Banner carousel 1 _ 768.png');
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .img__carousel {
+        content: url('../assets/Desktop/Banner carousel 1 _ 1440 (1).png');
+    }
+
+}

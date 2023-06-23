@@ -1,0 +1,134 @@
+@import '../abstract/variaveis';
+
+.produtos {
+    margin-top: 1rem;
+    h1 {
+        padding: 24px 40px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .produtos__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .produtos__itens {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 16px;
+
+            .card__produtos {
+                display: flex;
+                flex-direction: column;
+                width: 330px;
+                border: 1px solid rgba(0, 0, 0, 0.13);
+
+                .descricao {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 13px 16px 16px 16px;
+                    gap: 16px;
+
+                    h3 {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
+
+                    button {
+                        width: 102px;
+                        height: 37px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        letter-spacing: 0.457143px;
+                        border: none;
+                        color: white;
+                        background-color: $cor-primaria-4;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .produto__img__camiseta {
+        content: url('../assets/Tablet/Imagens_Cards/Camiseta.png');
+    }
+
+    .produto__img__bolsa {
+        content: url('../assets/Tablet/Imagens_Cards/bolsa.png');
+    }
+
+    .produto__img__tenis {
+        content: url('../assets/Tablet/Imagens_Cards/tenis.png');
+    }
+
+    .produto__img__jaqueta {
+        content: url('../assets/Tablet/Imagens_Cards/jaqueta jeans.png');
+    }
+
+    .produto__img__calça {
+        content: url('../assets/Tablet/Imagens_Cards/calça.png');
+    }
+
+    .produto__img__oculos {
+        content: url('../assets/Tablet/Imagens_Cards/óculos.png');
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .produtos {
+        .produtos__container {
+            .produtos__itens {
+                margin: 32px;
+
+                .produto__img__camiseta {
+                    content: url('../assets/Desktop/Imagens_Cards/Camiseta.png');
+                }
+
+                .produto__img__bolsa {
+                    content: url('../assets/Desktop/Imagens_Cards/Bolsa.png');
+                }
+
+                .produto__img__tenis {
+                    content: url('../assets/Desktop/Imagens_Cards/Tenis.png');
+                }
+
+                .produto__img__jaqueta {
+                    content: url('../assets/Desktop/Imagens_Cards/Jaqueta.png');
+                }
+
+                .produto__img__calça {
+                    content: url('../assets/Desktop/Imagens_Cards/Calça.png');
+                }
+
+                .produto__img__oculos {
+                    content: url('../assets/Desktop/Imagens_Cards/óculos.png');
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+@import '../abstract/variaveis';
+
+.facilidades {
+    background-color: $cor-primaria-1;
+    color: white;
+    padding: 32px 30.5px;
+    h1 {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .facilidades__itens{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        .card__facilidades{
+            display: grid;
+            grid-template-areas: 
+            "img titulo"
+            "img descricao";
+            column-gap: 24.99px;
+            row-gap: 16px;
+            width: 304px;
+            height: 79px;
+            img {
+                grid-area: img;
+                align-self: center;
+            }
+            h4 {
+                grid-area: titulo;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 23px;
+                color: $cor-primaria-3;
+                text-transform: uppercase;
+            }
+            p {
+                grid-area: descricao;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    .facilidades {
+        .facilidades__itens {
+        flex-direction: row;
+        justify-content: center;
+        }
+    }
+}

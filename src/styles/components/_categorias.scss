@@ -1,0 +1,78 @@
+@import '../abstract/variaveis';
+
+.categoria {
+    h1 {
+        padding: 24px 40px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+
+    }
+    .itens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 30px;
+        .categoria__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+                background-color: $cor-primaria-1;
+                color: white;
+                width: 100%;
+                padding: 8px 32.5px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img__camiseta {
+        content: url('../assets/Tablet/Categorias/Categoria\ camiseta.png');
+    }
+    .img__bolsas {
+        content: url('../assets/Tablet/Categorias/Categoria\ Bolsas.png');
+    }
+    .img__calçados {
+        content: url('../assets/Tablet/Categorias/Categoria\ calçados.png');
+    }
+    .img__casacos {
+        content: url('../assets/Tablet/Categorias/Categoria\ casacos.png');
+    }
+    .img__calças {
+        content: url('../assets/Tablet/Categorias/Categoria\ calças.png');
+    }
+    .img__oculos {
+        content: url('../assets/Tablet/Categorias/Categoria\ óculos.png');
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .img__camiseta {
+        content: url('../assets/Desktop/Categorias/Categoria\ camiseta.png');
+    }
+    .img__bolsas {
+        content: url('../assets/Desktop/Categorias/Categoria\ Bolsa.png');
+    }
+    .img__calçados {
+        content: url('../assets/Desktop/Categorias/Categoria\ calçados.png');
+    }
+    .img__casacos {
+        content: url('../assets/Desktop/Categorias/Categoria\ casacos.png');
+    }
+    .img__calças {
+        content: url('../assets/Desktop/Categorias/Categoria\ calça.png');
+    }
+    .img__oculos {
+        content: url('../assets/Desktop/Categorias/Categoria\ óculos.png');
+    }
+
+}
+

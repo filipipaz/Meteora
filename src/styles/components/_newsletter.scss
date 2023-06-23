@@ -1,0 +1,59 @@
+@import '../abstract/variaveis';
+
+.newsletter {
+    padding: 28.5px;
+    .newsletter__box{
+        border: 1px solid black;
+        padding: 24px 16px;
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            padding-bottom: 24px;
+        }div {
+            display: flex;
+            justify-content: center;
+            input {
+                width: 205px;
+                height: 44.96px;
+                padding: 7px 15px;
+                border: 1px solid black;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+            }
+            button {
+                width: 84px;
+                height: 44.96px;
+                border: none;
+                color: white;
+                background-color: $cor-primaria-4;
+                border: 1px solid $cor-primaria-4;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.457143px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .newsletter__box{
+        border: 2px solid black;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .newsletter{
+        display: flex;
+        justify-content: center;
+        padding: 65.5px;
+        .newsletter__box {
+            width: 729px;
+            height: 190px;
+        }
+    }
+}

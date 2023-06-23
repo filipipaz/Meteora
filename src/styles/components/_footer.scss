@@ -1,0 +1,13 @@
+@import '../abstract/variaveis';
+
+footer {
+    padding: 17px 64px;
+    background-color: $cor-primaria-1;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 154% */
+
+    text-align: center;
+}
