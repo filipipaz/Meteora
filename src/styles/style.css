@@ -23,7 +23,6 @@ button {
   background-color: #000000;
   display: flex;
   flex-direction: column;
-  width: 100vw;
 }
 .cabecalho .menu__hamburguer {
   display: none;
