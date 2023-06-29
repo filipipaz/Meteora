@@ -102,6 +102,9 @@ button {
   }
   header .cabecalho .cabecalho__top .logo__nav {
     content: url(../assets/Tablet/Logo\ tablet.png);
+    width: 99.564px;
+    height: 24px;
+    align-self: center;
   }
   header .cabecalho .menu__btn {
     display: none;
@@ -156,6 +159,10 @@ button {
   }
   header .cabecalho .cabecalho__top .logo__nav {
     content: url(../assets/Desktop/Logo\ desktop.png);
+    width: 132.752px;
+    height: 32px;
+    flex-shrink: 0;
+    align-self: center;
   }
   header .cabecalho .menu__btn {
     display: none;
