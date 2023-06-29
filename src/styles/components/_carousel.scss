@@ -4,30 +4,36 @@
 .carousel {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     width: 100%;
     height: 415px;
     margin: auto;
+
     .swiper-slide {
         text-align: center;
     }
+
     .swiper-pagination {
         // --swiper-pagination-bullet-width: 102px;
         --swiper-pagination-color: white;
     }
-    .swiper-button-prev, .swiper-button-next {
-        --swiper-navigation-color:white;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-color: white;
         --swiper-navigation-size: 18px;
 
     }
-    
+
     .carousel-slide-1 {
         background-color: rgb(137 96 180);
-        
+
     }
+
     .carousel-slide-2 {
         background-color: $cor-complementar-1;
     }
+
     .carousel-slide-3 {
         background-color: $cor-complementar-2;
     }
@@ -35,12 +41,20 @@
 
 @media screen and (min-width: 768px) and (max-width:1439px) {
     .carousel {
+        .swiper-slide {
+            text-align: left;
+        }
+        .carousel-slide-3 {
+            text-align: right;
+        }
         .img__carousel-1 {
             content: url('../assets/Tablet/Banner carousel 1 _ 768.png');
         }
+
         .img__carousel-2 {
             content: url('../assets/Tablet/Banner carousel 2 _ 768.png');
         }
+
         .img__carousel-3 {
             content: url('../assets/Tablet/Banner carousel 3 _ 768.png');
         }
@@ -50,16 +64,26 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .carousel {
+        .swiper-slide {
+            text-align: left;
+        }
+        .carousel-slide-3 {
+            text-align: right;
+        }
 
-    .img__carousel-1 {
-        content: url('../assets/Desktop/Banner carousel 1 _ 1440 (1).png');
-    }
-    .img__carousel-2 {
-        content: url('../assets/Desktop/Banner carousel 2 _ 1440 (1).png');
-    }
-    .img__carousel-3 {
-        content: url('../assets/Desktop/Banner carousel 3 _ 1440 (1).png');
+        .img__carousel-1 {
+            content: url('../assets/Desktop/Banner carousel 1 _ 1440 (1).png');
+        }
+
+        .img__carousel-2 {
+            content: url('../assets/Desktop/Banner carousel 2 _ 1440 (1).png');
+        }
+
+        .img__carousel-3 {
+            content: url('../assets/Desktop/Banner carousel 3 _ 1440 (1).png');
+
+        }
 
     }
-
 }

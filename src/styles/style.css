@@ -215,8 +215,9 @@ button {
 .carousel .swiper-pagination {
   --swiper-pagination-color: white;
 }
-.carousel .swiper-button-prev, .carousel .swiper-button-next {
-  --swiper-navigation-color:white;
+.carousel .swiper-button-prev,
+.carousel .swiper-button-next {
+  --swiper-navigation-color: white;
   --swiper-navigation-size: 18px;
 }
 .carousel .carousel-slide-1 {
@@ -230,6 +231,12 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .carousel .swiper-slide {
+    text-align: left;
+  }
+  .carousel .carousel-slide-3 {
+    text-align: right;
+  }
   .carousel .img__carousel-1 {
     content: url("../assets/Tablet/Banner carousel 1 _ 768.png");
   }
@@ -241,13 +248,19 @@ button {
   }
 }
 @media screen and (min-width: 1440px) {
-  .img__carousel-1 {
+  .carousel .swiper-slide {
+    text-align: left;
+  }
+  .carousel .carousel-slide-3 {
+    text-align: right;
+  }
+  .carousel .img__carousel-1 {
     content: url("../assets/Desktop/Banner carousel 1 _ 1440 (1).png");
   }
-  .img__carousel-2 {
+  .carousel .img__carousel-2 {
     content: url("../assets/Desktop/Banner carousel 2 _ 1440 (1).png");
   }
-  .img__carousel-3 {
+  .carousel .img__carousel-3 {
     content: url("../assets/Desktop/Banner carousel 3 _ 1440 (1).png");
   }
 }
