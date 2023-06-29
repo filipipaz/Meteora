@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/styles/style.css">
 
 </head>
@@ -31,7 +32,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M0 0.571289H18V2.82129H0V0.571289ZM0 6.19629H18V8.44629H0V6.19629ZM0 11.8213H18V14.0713H0V11.8213Z"
                         fill="#DAFF01" />
-                </svg>  
+                </svg>
             </div>
 
             <nav class="menu__hamburguer">
@@ -56,14 +57,36 @@
                     <li><a href="#">Promoções</a></li>
                 </ul>
             </nav>
-            
+
             <div class='cabecalho__busca'><input type="search" name="busca" id="busca" placeholder="Digite o produto"
-                class="barra__pesquisa"> <button type="submit" class="btn__pesquisa">Buscar</button></div>
+                    class="barra__pesquisa"> <button type="submit" class="btn__pesquisa">Buscar</button></div>
         </div>
         <section class="carousel">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide carousel-slide-1"><img src="./src/assets/Mobile/Banner carousel 1 _ 375.png"
+                            alt="Meteora Banner Carrossel" class="img__carousel-1"></div>
+                    <div class="swiper-slide carousel-slide-2"><img src="./src/assets/Mobile/Banner carousel 2 _ 375.png"
+                            alt="Banner Carrosel" class="img__carousel-2"></div>
+                    <div class="swiper-slide carousel-slide-3"><img src="./src/assets/Mobile/Banner carousel 3 _ 375.png"
+                            alt="Banner Carrosel" class="img__carousel-3"></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <img src="./src/assets/Mobile/Banner carousel 1 _ 375.png" alt="Banner Carrosel" class="img__carousel">
-            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+
+
         </section>
     </header>
     <main>
@@ -73,27 +96,33 @@
             <div class="itens">
 
                 <div class="categoria__item">
-                        <img src="./src/assets/Mobile/Categorias/categoria_camiseta.png" alt="Categoria camiseta" class="img__camiseta" >
+                    <img src="./src/assets/Mobile/Categorias/categoria_camiseta.png" alt="Categoria camiseta"
+                        class="img__camiseta">
                     <span>Camisetas</span>
                 </div>
                 <div class="categoria__item">
-                        <img src="./src/assets/Mobile/Categorias/categoria_bolsa.png" alt="Categoria bolsa" class="img__bolsas" >
+                    <img src="./src/assets/Mobile/Categorias/categoria_bolsa.png" alt="Categoria bolsa"
+                        class="img__bolsas">
                     <span>Bolsas</span>
                 </div>
                 <div class="categoria__item">
-                        <img src="./src/assets/Mobile/Categorias/categoria_calçados.png" alt="Categoria calçados" class="img__calçados" >
+                    <img src="./src/assets/Mobile/Categorias/categoria_calçados.png" alt="Categoria calçados"
+                        class="img__calçados">
                     <span>Calçados</span>
                 </div>
                 <div class="categoria__item">
-                        <img src="./src/assets/Mobile/Categorias/categoria_calça.png" alt="Categoria calças" class="img__calças">
+                    <img src="./src/assets/Mobile/Categorias/categoria_calça.png" alt="Categoria calças"
+                        class="img__calças">
                     <span>Calças</span>
                 </div>
                 <div class="categoria__item">
-                        <img src="./src/assets/Mobile/Categorias/categoria_casacos.png" alt="Categoria Casacos" class="img__casacos">
+                    <img src="./src/assets/Mobile/Categorias/categoria_casacos.png" alt="Categoria Casacos"
+                        class="img__casacos">
                     <span>Casacos</span>
                 </div>
                 <div class="categoria__item">
-                        <img src="./src/assets/Mobile/Categorias/categoria_óculos.png" alt="Categoria óculos" class="img__oculos">
+                    <img src="./src/assets/Mobile/Categorias/categoria_óculos.png" alt="Categoria óculos"
+                        class="img__oculos">
                     <span>Óculos</span>
                 </div>
             </div>
@@ -105,10 +134,12 @@
             <div class="produtos__container">
                 <div class="produtos__itens">
                     <div class="card__produtos">
-                        <img src="./src/assets/Mobile/Imagens cards/Card camiseta.png" alt="Camiseta Conforto" class="produto__img__camiseta">
+                        <img src="./src/assets/Mobile/Imagens cards/Card camiseta.png" alt="Camiseta Conforto"
+                            class="produto__img__camiseta">
                         <div class="descricao">
                             <h3>Camiseta Conforto</h3>
-                            <p>Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.
+                            <p>Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem
+                                unissex.
                             </p>
                             <span>R$70,00</span>
                             <button>Ver mais</button>
@@ -117,7 +148,8 @@
                 </div>
                 <div class="produtos__itens">
                     <div class="card__produtos">
-                        <img src="./src/assets/Mobile/Imagens cards/Card calça.png" alt="Calça Alfaiataria" class="produto__img__calça">
+                        <img src="./src/assets/Mobile/Imagens cards/Card calça.png" alt="Calça Alfaiataria"
+                            class="produto__img__calça">
                         <div class="descricao">
                             <h3>Calça Alfaiataria</h3>
                             <p>Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
@@ -128,7 +160,8 @@
                 </div>
                 <div class="produtos__itens">
                     <div class="card__produtos">
-                        <img src="./src/assets/Mobile/Imagens cards/Card tenis.png" alt="Tênis Chunky" class="produto__img__tenis">
+                        <img src="./src/assets/Mobile/Imagens cards/Card tenis.png" alt="Tênis Chunky"
+                            class="produto__img__tenis">
                         <div class="descricao">
                             <h3>Tênis Chunky</h3>
                             <p>Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
@@ -139,7 +172,8 @@
                 </div>
                 <div class="produtos__itens">
                     <div class="card__produtos">
-                        <img src="./src/assets/Mobile/Imagens cards/Card jaqueta jeans.png" alt="Jaqueta Jeans" class="produto__img__jaqueta">
+                        <img src="./src/assets/Mobile/Imagens cards/Card jaqueta jeans.png" alt="Jaqueta Jeans"
+                            class="produto__img__jaqueta">
                         <div class="descricao">
                             <h3>Jaqueta Jeans</h3>
                             <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
@@ -150,7 +184,8 @@
                 </div>
                 <div class="produtos__itens">
                     <div class="card__produtos">
-                        <img src="./src/assets/Mobile/Imagens cards/Cards óculos.png" alt="Óculos Redondo" class="produto__img__oculos">
+                        <img src="./src/assets/Mobile/Imagens cards/Cards óculos.png" alt="Óculos Redondo"
+                            class="produto__img__oculos">
                         <div class="descricao">
                             <h3>Óculos Redondo</h3>
                             <p>Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
@@ -161,10 +196,12 @@
                 </div>
                 <div class="produtos__itens">
                     <div class="card__produtos">
-                        <img src="./src/assets/Mobile/Imagens cards/Card bolsa.png" alt="Bolsa" class="produto__img__bolsa">
+                        <img src="./src/assets/Mobile/Imagens cards/Card bolsa.png" alt="Bolsa"
+                            class="produto__img__bolsa">
                         <div class="descricao">
                             <h3>Bolsa Coringa</h3>
-                            <p>Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+                            <p>Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!
+                            </p>
                             <span>R$120,00</span>
                             <button>Ver mais</button>
                         </div>
@@ -205,6 +242,8 @@
     </footer>
 
     <script src="./src/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./src/js/carousel.js"></script> 
 </body>
 
 </html>

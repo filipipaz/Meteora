@@ -93,12 +93,69 @@ button {
   align-self: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   header .cabecalho {
     flex-direction: row;
     height: 58px;
     justify-content: space-between;
     align-items: center;
+  }
+  header .cabecalho .cabecalho__top .logo__nav {
+    content: url(../assets/Tablet/Logo\ tablet.png);
+  }
+  header .cabecalho .menu__btn {
+    display: none;
+  }
+  header .cabecalho .menu {
+    display: block;
+    padding-left: 1rem;
+    align-self: center;
+  }
+  header .cabecalho .menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  header .cabecalho .menu li:first-of-type {
+    display: none;
+  }
+  header .cabecalho .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  header .cabecalho__busca {
+    padding: 1.3rem 1.4rem;
+    background-color: transparent;
+    justify-self: right;
+  }
+  header .cabecalho__busca .barra__pesquisa {
+    width: 145px;
+    height: 38px;
+  }
+  header .cabecalho__busca .btn__pesquisa {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    width: 67px;
+    height: 38px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 154% */
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .cabecalho {
+    flex-direction: row;
+    height: 58px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .cabecalho .cabecalho__top .logo__nav {
+    content: url(../assets/Desktop/Logo\ desktop.png);
   }
   header .cabecalho .menu__btn {
     display: none;
@@ -147,22 +204,51 @@ button {
 .carousel {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: rgb(137, 96, 180);
+  height: 415px;
   margin: auto;
 }
+.carousel .swiper-slide {
+  text-align: center;
+}
+.carousel .swiper-pagination {
+  --swiper-pagination-color: white;
+}
+.carousel .swiper-button-prev, .carousel .swiper-button-next {
+  --swiper-navigation-color:white;
+  --swiper-navigation-size: 18px;
+}
+.carousel .carousel-slide-1 {
+  background-color: rgb(137, 96, 180);
+}
+.carousel .carousel-slide-2 {
+  background-color: #F58D90;
+}
+.carousel .carousel-slide-3 {
+  background-color: #F87F46;
+}
 
-@media screen and (min-width: 768px) {
-  .carousel {
-    display: block;
-  }
-  .carousel .img__carousel {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .carousel .img__carousel-1 {
     content: url("../assets/Tablet/Banner carousel 1 _ 768.png");
+  }
+  .carousel .img__carousel-2 {
+    content: url("../assets/Tablet/Banner carousel 2 _ 768.png");
+  }
+  .carousel .img__carousel-3 {
+    content: url("../assets/Tablet/Banner carousel 3 _ 768.png");
   }
 }
 @media screen and (min-width: 1440px) {
-  .img__carousel {
+  .img__carousel-1 {
     content: url("../assets/Desktop/Banner carousel 1 _ 1440 (1).png");
+  }
+  .img__carousel-2 {
+    content: url("../assets/Desktop/Banner carousel 2 _ 1440 (1).png");
+  }
+  .img__carousel-3 {
+    content: url("../assets/Desktop/Banner carousel 3 _ 1440 (1).png");
   }
 }
 .categoria h1 {
