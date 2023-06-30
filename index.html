@@ -67,12 +67,15 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide carousel-slide-1"><img src="./src/assets/Mobile/Banner carousel 1 _ 375.png"
-                            alt="Meteora Banner Carrossel" class="img__carousel-1"></div>
-                    <div class="swiper-slide carousel-slide-2"><img src="./src/assets/Mobile/Banner carousel 2 _ 375.png"
-                            alt="Banner Carrosel" class="img__carousel-2"></div>
-                    <div class="swiper-slide carousel-slide-3"><img src="./src/assets/Mobile/Banner carousel 3 _ 375.png"
-                            alt="Banner Carrosel" class="img__carousel-3"></div>
+                    <div class="swiper-slide carousel-slide-1"><img
+                            src="./src/assets/Mobile/Banner carousel 1 _ 375.png" alt="Meteora Banner Carrossel"
+                            class="img__carousel-1"></div>
+                    <div class="swiper-slide carousel-slide-2"><img
+                            src="./src/assets/Mobile/Banner carousel 2 _ 375.png" alt="Banner Carrosel"
+                            class="img__carousel-2"></div>
+                    <div class="swiper-slide carousel-slide-3"><img
+                            src="./src/assets/Mobile/Banner carousel 3 _ 375.png" alt="Banner Carrosel"
+                            class="img__carousel-3"></div>
                     ...
                 </div>
                 <!-- If we need pagination -->
@@ -178,7 +181,7 @@
                             <h3>Jaqueta Jeans</h3>
                             <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
                             <span>R$150,00</span>
-                            <button>Ver mais</button>
+                            <button id="btn-modal-jeans">Ver mais</button>
                         </div>
                     </div>
                 </div>
@@ -232,8 +235,9 @@
         <section class="newsletter">
             <div class="newsletter__box">
                 <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
-                <div><input type="email" name="email" id="email" placeholder="Digite seu email"><button
-                        type="submit">Enviar</button></div>
+                <form><input type="email" name="email" id="email" placeholder="Digite seu email" required><button
+                        type="submit" id="enviar-email">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
@@ -241,9 +245,62 @@
         <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
     </footer>
 
+    <dialog class="modal modal__newsletter">
+        <div class="modal__header">
+            <img src="./src/assets/Tablet/Ícones/check-circle.svg" alt="Círculo Checked">
+            <h3>E-mail cadastrado com sucesso!</h3>
+            <button type="button" class="btn-fechar" aria-label="Fechar modal"><img
+                    src="./src/assets/Tablet/Ícones/⭐️ Icon.svg"></button>
+        </div>
+        <div class="modal__descricao">
+            <p>Em breve você receberá novidades exclusivas da Meteora.</p>
+        </div>
+    </dialog>
+
+    <dialog class="modal modal__produtos" id="modal__jeans">
+        <div class="modal__header">
+            <img src="./src/assets/Tablet/Ícones/check-circle.svg" alt="Círculo Checked">
+            <h3>Confira detalhes sobre o produto</h3>
+            <button type="button" class="btn-fechar-produto" aria-label="Fechar modal"><img
+                    src="./src/assets/Tablet/Ícones/⭐️ Icon.svg"></button>
+        </div>
+        <div class="modal__descricao">
+            <div class="modal__img__produto">
+                <img src="./src/assets/Mobile/Imagens cards/Card jaqueta jeans.png" alt="Imagem jaqueta jeans">
+            </div>
+            <div class="modal__descricao__produto">
+                <h3>Jaqueta Jeans</h3>
+                <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                <span>R$150,00</span>
+                <p class="riachuelo">Vendido e entregue por Riachuelo</p>
+            </div>
+            <div class="modal__cores">
+                <h4>Cores:</h4>
+                <ul>
+                    <li><input type="radio" name="cor" id="azul-claro" value="azul-claro"><label for="azul-claro">Azul claro</label></li>
+                    <li><input type="radio" name="cor" id="offwhite" value="offwhite"><label for="offwhite">Offwhite</label></li>
+                    <li><input type="radio" name="cor" id="preto" value="preto"><label for="preto">Preto</label></li>
+                </ul>
+            </div>
+            <div class="modal__tamanho">
+                <h4>Tamanho:</h4>
+                <ul>
+                    <li><input type="radio" name="tamanho" id="tamanho-p"><label for="tamanho-p">P</label></li>
+                    <li><input type="radio" name="tamanho" id="tamanho-pp"><label for="tamanho-pp">PP</label></li>
+                    <li><input type="radio" name="tamanho" id="tamanho-m"><label for="tamanho-m">M</label></li>
+                    <li><input type="radio" name="tamanho" id="tamanho-g"><label for="tamanho-g">G</label></li>
+                    <li><input type="radio" name="tamanho" id="tamanho-gg"><label for="tamanho-gg">GG</label></li>
+                </ul>
+                <button>Adicionar à sacola</button>
+            </div>
+        </div>
+    </dialog>
+
+
     <script src="./src/js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./src/js/carousel.js"></script> 
+    <script src="./src/js/carousel.js"></script>
+    <script src="./src/js/modal.js"></script>
 </body>
 
 </html>
