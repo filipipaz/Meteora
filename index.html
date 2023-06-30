@@ -72,7 +72,8 @@
                             class="img__carousel-1"></div>
                     <div class="swiper-slide carousel-slide-2"><img
                             src="./src/assets/Mobile/Banner carousel 2 _ 375.png" alt="Banner Carrosel"
-                            class="img__carousel-2"></div>
+                            class="img__carousel-2">
+                    </div>
                     <div class="swiper-slide carousel-slide-3"><img
                             src="./src/assets/Mobile/Banner carousel 3 _ 375.png" alt="Banner Carrosel"
                             class="img__carousel-3"></div>
@@ -235,10 +236,10 @@
         <section class="newsletter">
             <div class="newsletter__box">
                 <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
-                <form><input type="email" name="email" id="email" placeholder="Digite seu email" required><button
+                <div><input type="email" name="email" id="email" placeholder="Digite seu email" required><button
                         type="submit" id="enviar-email">Enviar</button>
-                </form>
-            </div>
+                    <div>
+                    </div>
         </section>
     </main>
     <footer>
@@ -269,29 +270,35 @@
                 <img src="./src/assets/Mobile/Imagens cards/Card jaqueta jeans.png" alt="Imagem jaqueta jeans">
             </div>
             <div class="modal__descricao__produto">
-                <h3>Jaqueta Jeans</h3>
-                <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-                <span>R$150,00</span>
-                <p class="riachuelo">Vendido e entregue por Riachuelo</p>
-            </div>
-            <div class="modal__cores">
-                <h4>Cores:</h4>
-                <ul>
-                    <li><input type="radio" name="cor" id="azul-claro" value="azul-claro"><label for="azul-claro">Azul claro</label></li>
-                    <li><input type="radio" name="cor" id="offwhite" value="offwhite"><label for="offwhite">Offwhite</label></li>
-                    <li><input type="radio" name="cor" id="preto" value="preto"><label for="preto">Preto</label></li>
-                </ul>
-            </div>
-            <div class="modal__tamanho">
-                <h4>Tamanho:</h4>
-                <ul>
-                    <li><input type="radio" name="tamanho" id="tamanho-p"><label for="tamanho-p">P</label></li>
-                    <li><input type="radio" name="tamanho" id="tamanho-pp"><label for="tamanho-pp">PP</label></li>
-                    <li><input type="radio" name="tamanho" id="tamanho-m"><label for="tamanho-m">M</label></li>
-                    <li><input type="radio" name="tamanho" id="tamanho-g"><label for="tamanho-g">G</label></li>
-                    <li><input type="radio" name="tamanho" id="tamanho-gg"><label for="tamanho-gg">GG</label></li>
-                </ul>
-                <button>Adicionar à sacola</button>
+                <div class="modal__informacao__produto">
+                    <h3>Jaqueta Jeans</h3>
+                    <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                    <span>R$150,00</span>
+                    <p class="riachuelo">Vendido e entregue por Riachuelo</p>
+                </div>
+
+                <div class="modal__cores">
+                    <h4>Cores:</h4>
+                    <ul>
+                        <li><input type="radio" name="cor" id="azul-claro" value="azul-claro"><label
+                                for="azul-claro">Azul claro</label></li>
+                        <li><input type="radio" name="cor" id="offwhite" value="offwhite"><label
+                                for="offwhite">Offwhite</label></li>
+                        <li><input type="radio" name="cor" id="preto" value="preto"><label for="preto">Preto</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__tamanho">
+                    <h4>Tamanho:</h4>
+                    <ul>
+                        <li><input type="radio" name="tamanho" id="tamanho-p"><label for="tamanho-p">P</label></li>
+                        <li><input type="radio" name="tamanho" id="tamanho-pp"><label for="tamanho-pp">PP</label></li>
+                        <li><input type="radio" name="tamanho" id="tamanho-m"><label for="tamanho-m">M</label></li>
+                        <li><input type="radio" name="tamanho" id="tamanho-g"><label for="tamanho-g">G</label></li>
+                        <li><input type="radio" name="tamanho" id="tamanho-gg"><label for="tamanho-gg">GG</label></li>
+                    </ul>
+                    <button>Adicionar à sacola</button>
+                </div>
             </div>
         </div>
     </dialog>

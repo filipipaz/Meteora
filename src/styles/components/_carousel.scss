@@ -24,7 +24,9 @@
         --swiper-navigation-size: 18px;
 
     }
-
+    h1, h2 {
+        display: none;
+    }
     .carousel-slide-1 {
         background-color: rgb(137 96 180);
 
@@ -43,6 +45,9 @@
     .carousel {
         .swiper-slide {
             text-align: left;
+        }
+        h1, h2 {
+            display: flex;
         }
         .carousel-slide-3 {
             text-align: right;

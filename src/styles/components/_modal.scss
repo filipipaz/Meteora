@@ -34,7 +34,7 @@
         .modal__img__produto {
             margin-bottom: 24px;
         }
-        .modal__descricao__produto{
+        .modal__informacao__produto{
           display: flex;
           flex-direction: column;
           gap: 24px;
@@ -126,4 +126,13 @@
 
 .modal::backdrop {
     background: rgba(0, 0, 0, .7);
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 700px;
+        .modal__descricao{
+            flex-direction: row;
+        }
+    }
 }
